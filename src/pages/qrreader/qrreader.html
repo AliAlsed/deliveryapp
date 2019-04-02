@@ -1,0 +1,25 @@
+<!--
+  Generated template for the QrreaderPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>qrreader</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<div class="center">
+<button ion-button  round small color="light" (click)="read()"> qrcode</button>
+</div>
+<div *ngIf="scanData">
+  <p>Scanned Text : </p>
+  <p>Scanned Format : </p>
+
+</div>
+</ion-content>
